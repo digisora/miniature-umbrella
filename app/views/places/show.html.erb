@@ -72,16 +72,16 @@
     Upload a Photo
   </button>
 
-<div class="col-xs-10 col-xs-offset-1">
+<div class="clear"></div>
+
 <% @place.photos.each do |photo| %>
-  <div class="col-xs-12 col-sm-6">
-    <%= image_tag photo.picture, class: 'img-responsive'%>
-    <%= photo.caption %>
+  <div class="col-xs-6 col-sm-4 col-md-3">
+    <a href="#" class="thumbnail">
+      <%= image_tag photo.picture, class:'img-responsive' %>
+      <%= photo.caption %>
+    </a>
   </div>
 <% end %>
-</div>
-
-</div>
 
 <div class="clear"></div>
 
